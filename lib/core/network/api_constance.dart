@@ -7,4 +7,8 @@ class ApiConstance {
   static const popularMoviePath = '$baseUrl/movie/popular?$apiKey';
   static const baseImageUrl = 'https://image.tmdb.org/t/p/w500';
   static String imageUrl(String path) => '$baseImageUrl$path';
+  static String movieDetailsPath(int movieId) =>
+      "$baseUrl/movie/$movieId?$apiKey";
+  static String recommendationPath(int movieId) =>
+      "$baseUrl/movie/$movieId/recommendations?$apiKey";
 }

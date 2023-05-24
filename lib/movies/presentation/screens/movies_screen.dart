@@ -5,7 +5,7 @@ import 'package:flutter_movie_app/movies/presentation/components/popular_comp.da
 import 'package:flutter_movie_app/movies/presentation/components/top_rated_comp.dart';
 import 'package:flutter_movie_app/movies/presentation/controller/movies_bloc.dart';
 import 'package:flutter_movie_app/movies/presentation/controller/movies_events.dart';
-import 'package:flutter_movie_app/movies/presentation/controller/movies_states.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/services/services_locator.dart';

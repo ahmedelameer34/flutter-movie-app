@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:flutter_movie_app/movies/presentation/controller/movies_bloc.dart';
 import 'package:flutter_movie_app/movies/presentation/controller/movies_states.dart';
+import 'package:flutter_movie_app/movies/presentation/screens/movie_detail_screen.dart';
 
 import '../../../core/network/api_constance.dart';
 import '../../../core/utils/enums.dart';
@@ -41,7 +42,11 @@ class NowPlayingComponents extends StatelessWidget {
                     return GestureDetector(
                       key: const Key('openMovieMinimalDetail'),
                       onTap: () {
-                        /// TODO : NAVIGATE TO MOVIE DETAILS
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    MovieDetailScreen(id: item.id)));
                       },
                       child: Stack(
                         children: [
