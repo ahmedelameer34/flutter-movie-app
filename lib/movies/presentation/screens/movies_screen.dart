@@ -11,7 +11,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../core/services/services_locator.dart';
 
 class MoviesScreen extends StatelessWidget {
-  const MoviesScreen({Key? key}) : super(key: key);
+  const MoviesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class MoviesScreen extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        /// TODO : NAVIGATION TO POPULAR SCREEN
+
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -82,7 +82,7 @@ class MoviesScreen extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        /// TODO : NAVIGATION TO Top Rated Movies Screen
+
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
